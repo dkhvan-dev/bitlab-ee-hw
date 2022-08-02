@@ -9,6 +9,7 @@
 <html>
   <head>
     <title>$Title$</title>
+    <%@include file="bootstrap.jsp"%>
   </head>
   <body>
 
