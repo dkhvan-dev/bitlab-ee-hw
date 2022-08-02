@@ -18,19 +18,11 @@
       <input type="text" name="user_name">
 
       <label>
-        AGE :
+        EXAM POINTS :
       </label>
-      <input type="number" name="user_age">
+      <input type="number" name="user_points">
 
-      <label>
-        GENDER :
-      </label>
-      <input type="radio" id="male" name="gender" value="1">
-      <label for="male">male</label>
-
-      <input type="radio" id="female" name="gender" value="2">
-      <label for="female">female</label>
-      <button>SEND</button>
+      <button>SUBMIT EXAM</button>
     </form>
   </body>
 </html>

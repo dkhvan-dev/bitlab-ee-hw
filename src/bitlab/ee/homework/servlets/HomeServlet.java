@@ -11,25 +11,23 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        String name = request.getParameter("user_name");
-       int age = Integer.parseInt(request.getParameter("user_age"));
-       String gender = request.getParameter("gender");
+       int points = Integer.parseInt(request.getParameter("user_points"));
+       char ch;
 
 
        PrintWriter out = response.getWriter();
 
-       if (age >= 18) {
-           if (gender.equals("1")) {
-               out.println("Hello Dear Mister " + name + "!");
-           } else {
-               out.println("Hello Dear Miss " + name + "!");
-           }
-       } else {
-           if (gender.equals("1")) {
-               out.println("Hello Dude Mister " + name + "!");
-           } else {
-               out.println("Hello Dude Miss " + name + "!");
-           }
-       }
+       if (points >= 90) {
+            ch = 'A';
+       } else if (points >= 75 && points <= 89) {
+           ch = 'B';
+       } else if (points >= 60 && points <= 74) {
+           ch = 'C';
+       } else if (points >= 50 && points <= 59) {
+           ch = 'D';
+       } else ch = 'F';
+
+       out.println(name + " got " + '"' + ch + '"' + " for exam!");
     }
 
     @Override
