@@ -11,6 +11,18 @@
     <title>$Title$</title>
   </head>
   <body>
+    <form action="/home" method="get">
+      <label>
+        FULL NAME :
+      </label>
+      <input type="text" name="user_name">
 
+      <label>
+        EXAM POINTS :
+      </label>
+      <input type="number" name="user_points">
+
+      <button>SUBMIT EXAM</button>
+    </form>
   </body>
 </html>
