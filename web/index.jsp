@@ -11,6 +11,26 @@
     <title>$Title$</title>
   </head>
   <body>
+    <form action="/home" method="get">
+      <label>
+        NAME :
+      </label>
+      <input type="text" name="user_name">
 
+      <label>
+        SURNAME :
+      </label>
+      <input type="text" name="user_surname">
+
+      <label>
+        FOOD :
+      </label>
+      <select name="user_food">
+        <option>Manty - 900 KZT</option>
+        <option>Lagman - 1500 KZT</option>
+        <option>Doner - 1200 KZT</option>
+      </select>
+      <button>ORDER</button>
+    </form>
   </body>
 </html>
