@@ -13,24 +13,24 @@
   <body>
     <form action="/home" method="get">
       <label>
-        NAME :
+        FULL NAME :
       </label>
       <input type="text" name="user_name">
 
       <label>
-        SURNAME :
+        AGE :
       </label>
-      <input type="text" name="user_surname">
+      <input type="number" name="user_age">
 
       <label>
-        FOOD :
+        GENDER :
       </label>
-      <select name="user_food">
-        <option>Manty - 900 KZT</option>
-        <option>Lagman - 1500 KZT</option>
-        <option>Doner - 1200 KZT</option>
-      </select>
-      <button>ORDER</button>
+      <input type="radio" id="male" name="gender" value="1">
+      <label for="male">male</label>
+
+      <input type="radio" id="female" name="gender" value="2">
+      <label for="female">female</label>
+      <button>SEND</button>
     </form>
   </body>
 </html>

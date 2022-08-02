@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20b30ba3-d426-4937-80d6-3168f2e0f35c" name="Changes" comment="First Home Work">
-      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/db/DBManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/db/Items.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/HomeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
@@ -170,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659372721018</updated>
       <workItem from="1659372722475" duration="4040000" />
-      <workItem from="1659413266377" duration="910000" />
+      <workItem from="1659413266377" duration="2548000" />
     </task>
     <task id="LOCAL-00001" summary="First Home Work">
       <created>1659373264764</created>

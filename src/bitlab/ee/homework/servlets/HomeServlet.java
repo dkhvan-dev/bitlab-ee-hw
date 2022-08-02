@@ -11,12 +11,25 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        String name = request.getParameter("user_name");
-       String surname = request.getParameter("user_surname");
-       String food = request.getParameter("user_food");
+       int age = Integer.parseInt(request.getParameter("user_age"));
+       String gender = request.getParameter("gender");
+
 
        PrintWriter out = response.getWriter();
 
-       out.println("" + name + " " + surname + " ordered " + food);
+       if (age >= 18) {
+           if (gender.equals("1")) {
+               out.println("Hello Dear Mister " + name + "!");
+           } else {
+               out.println("Hello Dear Miss " + name + "!");
+           }
+       } else {
+           if (gender.equals("1")) {
+               out.println("Hello Dude Mister " + name + "!");
+           } else {
+               out.println("Hello Dude Miss " + name + "!");
+           }
+       }
     }
 
     @Override
