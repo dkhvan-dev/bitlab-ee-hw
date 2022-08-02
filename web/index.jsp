@@ -11,11 +11,17 @@
     <title>$Title$</title>
   </head>
   <body>
-    <div>
-      <h1>NAME</h1>
-      <h1>SURNAME</h1>
-      <h1>DEPARTMENT</h1>
-      <h1>SALARY</h1>
-    </div>
+    <form action="/home" method="get">
+      <label>
+        NAME :
+      </label>
+      <input type="text" name="user_name">
+
+      <label>
+        SURNAME :
+      </label>
+      <input type="text" name="user_surname">
+      <button>ADD USER</button>
+    </form>
   </body>
 </html>

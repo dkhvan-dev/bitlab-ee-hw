@@ -14,13 +14,13 @@ import java.util.ArrayList;
 public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ArrayList<Items> items = DBManager.getItems();
-        PrintWriter out = response.getWriter();
-        out.println("<div style='display: flex; justify-content: space-between; width: 1000px; margin: 0;'><h1>NAME</h1><h1>SURNAME</h1><h1>DEPARTMENT</h1><h1>SALARY</h1></div>");
+       String name = request.getParameter("user_name");
+       String surname = request.getParameter("user_surname");
 
-        for (Items it : items) {
-            out.println("<div style='display: flex; justify-content: space-between; width: 1000px;'><h1>" + it.getName() + "</h1><h1>" + it.getSurname() + "</h1><h1>" + it.getDepartment() + "</h1><h1>" + it.getSalary() + "</h1></div>");
-        }
+       PrintWriter out = response.getWriter();
+
+       out.println("Your name: " + name);
+       out.println("Your surname: " + surname);
     }
 
     @Override
