@@ -46,7 +46,7 @@
           <%=el.getAmount()%>
         </td>
         <td>
-          <a href="#"class="btn btn-info btn-sm">DETAILS</a>
+          <a href="/detailsServlet?id=<%=el.getId()%>" class="btn btn-info btn-sm">DETAILS</a>
         </td>
       </tr>
 

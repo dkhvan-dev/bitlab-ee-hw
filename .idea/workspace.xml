@@ -10,19 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20b30ba3-d426-4937-80d6-3168f2e0f35c" name="Changes" comment="First Home Work">
-      <change afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/addItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/Phones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/addItem.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/bootstrap.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/DetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/AddServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/HomeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/Footballer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +181,7 @@
       <workItem from="1659372722475" duration="4040000" />
       <workItem from="1659413266377" duration="13476000" />
       <workItem from="1659438389785" duration="826000" />
-      <workItem from="1659458403975" duration="1864000" />
+      <workItem from="1659458403975" duration="3154000" />
     </task>
     <task id="LOCAL-00001" summary="First Home Work">
       <created>1659373264764</created>

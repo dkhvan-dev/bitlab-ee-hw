@@ -23,4 +23,13 @@ public class DBManager {
     public static ArrayList<Phones> getData() {
         return data;
     }
+
+    public static Phones getPhone(Long id) {
+        for (Phones el : data) {
+            if (el.getId() == id) {
+                return el;
+            }
+        }
+        return null;
+    }
 }
