@@ -1,14 +1,10 @@
 package bitlab.ee.homework.servlets;
 
-import bitlab.ee.homework.db.DBManager;
-import bitlab.ee.homework.db.Items;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
 @WebServlet(name = "HomeServlet", value = "/home")
 public class HomeServlet extends HttpServlet {
@@ -16,11 +12,11 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        String name = request.getParameter("user_name");
        String surname = request.getParameter("user_surname");
+       String food = request.getParameter("user_food");
 
        PrintWriter out = response.getWriter();
 
-       out.println("Your name: " + name);
-       out.println("Your surname: " + surname);
+       out.println("" + name + " " + surname + " ordered " + food);
     }
 
     @Override

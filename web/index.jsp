@@ -21,7 +21,16 @@
         SURNAME :
       </label>
       <input type="text" name="user_surname">
-      <button>ADD USER</button>
+
+      <label>
+        FOOD :
+      </label>
+      <select name="user_food">
+        <option>Manty - 900 KZT</option>
+        <option>Lagman - 1500 KZT</option>
+        <option>Doner - 1200 KZT</option>
+      </select>
+      <button>ORDER</button>
     </form>
   </body>
 </html>
