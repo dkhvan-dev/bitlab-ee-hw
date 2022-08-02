@@ -11,18 +11,33 @@
     <title>$Title$</title>
   </head>
   <body>
-    <form action="/home" method="get">
+    <form action="/add" method="post" style="display: flex; flex-direction: column;">
       <label>
-        FULL NAME :
+        NAME :
+        <input type="text" name="user_name">
       </label>
-      <input type="text" name="user_name">
 
       <label>
-        EXAM POINTS :
+        SURNAME :
+        <input type="text" name="user_surname">
       </label>
-      <input type="number" name="user_points">
 
-      <button>SUBMIT EXAM</button>
+      <label>
+        SALARY :
+        <input type="number" name="user_salary">
+      </label>
+
+      <label>
+        CLUB :
+      <input type="text" name="user_club">
+      </label>
+
+      <label>
+        TRANSFER PRICE :
+      <input type="number" name="user_transfer_price">
+      </label>
+
+      <button>ADD FOOTBALLER</button>
     </form>
   </body>
 </html>
