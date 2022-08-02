@@ -11,6 +11,11 @@
     <title>$Title$</title>
   </head>
   <body>
-
+    <div>
+      <h1>NAME</h1>
+      <h1>SURNAME</h1>
+      <h1>DEPARTMENT</h1>
+      <h1>SALARY</h1>
+    </div>
   </body>
 </html>
