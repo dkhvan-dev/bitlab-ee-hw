@@ -1,28 +1,26 @@
 package db;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class DBManager {
+    private static ArrayList<Phones> data = new ArrayList<>();
 
-    private static ArrayList<Footballer> footballers = new ArrayList<>();
-
-    private static Long id = 5L;
-
+    private static Long id = 6L;
     static {
-        footballers.add(new Footballer(1L, "Cristiano", "Ronaldo", 5000, "Real Madrid CF", 10000));
-        footballers.add(new Footballer(2L, "Lionel", "Messi", 4000, "FC Barcelona", 8000));
-        footballers.add(new Footballer(3L, "Neymar", "Da Silva Santos Junior", 3500, "FC Barcelona", 7000));
-        footballers.add(new Footballer(4L, "Zlatan", "Ibragimovich", 3000, "FC Milan", 6000));
+        data.add(new Phones(1L, "Iphone 13 Pro Max", 450000, 10));
+        data.add(new Phones(2L, "XIAOMI REDMI NOTE 8", 82000, 20));
+        data.add(new Phones(3L, "Oppo 3 Model X", 350000, 15));
+        data.add(new Phones(4L, "Macbook Pro M1 13", 750000, 15));
+        data.add(new Phones(5L, "ASUS TUF Gaming", 340000, 7));
     }
 
-    public static void addFootballer(Footballer footballer) {
-        footballer.setId(id);
-        footballers.add(footballer);
+    public static void addPhone(Phones newData) {
+        newData.setId(id);
+        data.add(newData);
         id++;
     }
 
-    public static ArrayList<Footballer> getAllFootballers() {
-        return footballers;
+    public static ArrayList<Phones> getData() {
+        return data;
     }
 }
