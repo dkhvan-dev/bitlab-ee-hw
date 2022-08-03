@@ -10,22 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20b30ba3-d426-4937-80d6-3168f2e0f35c" name="Changes" comment="First Home Work">
-      <change afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/CultureServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/News.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/cinema.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/culture.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/sport.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/AddTaskServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/Tasks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/allTasks.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/details.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/newTask.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/DetailsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/SportServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/CinemaServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/CultureServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/addItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/CinemaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/SportServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bitlab/ee/homework/servlets/DetailsServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/Phones.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/addItem.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/details.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/News.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/cinema.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/culture.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sport.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +196,7 @@
       <workItem from="1659438389785" duration="826000" />
       <workItem from="1659458403975" duration="3645000" />
       <workItem from="1659504303639" duration="1949000" />
-      <workItem from="1659506330803" duration="4259000" />
+      <workItem from="1659506330803" duration="14315000" />
     </task>
     <task id="LOCAL-00001" summary="First Home Work">
       <created>1659373264764</created>

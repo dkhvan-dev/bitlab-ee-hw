@@ -3,18 +3,34 @@ package db;
 import java.util.ArrayList;
 
 public class DBManager {
-    private static ArrayList<News> news = new ArrayList<>();
+    private static ArrayList<Tasks> tasks = new ArrayList<>();
 
-    private static Long id = 5L;
+    private static Long id = 6L;
 
     static {
-        news.add(new News(1L, "The Crazy Way Falcon And The Winter Soldier's Anthony Mackie Learned About Captain", "Last Friday, Disnay+'s The Falcon and the Winter Soldier concluded its six-episode run...", "Adam Holmes", "cinema"));
-        news.add(new News(2L, "Star Wars' Mark Hamill Addresses Horrifying Ewok Theory", "Most of the time, if you're enjoying the movie...", "Dirk Libbay", "cinema"));
-        news.add(new News(3L, "Last Man Standing's Kaitlyn Dever Landed A Movie With ER Icon George Clooney", "If you're a fan of the soon-to-conclude Last Man Standing, then ...", "Adam Holmes", "sport"));
-        news.add(new News(4L, "Mattew McConaughey Reveals The Question He Gets Asked The Most About Acting In Hollywood", "Oscar winner Mattew McConaughey...", "Adreon Patterson", "culture"));
+        tasks.add(new Tasks(1L, "Создать Веб приложение на JAVA EE", "Нужно создать крупный проект и выложить его на Gitlab","23.10.2021", "Да"));
+        tasks.add(new Tasks(2L, "Убраться дома и закупить продукты", "Тряпка и ведро лежат в ванной комнате","25.10.2021", "Да"));
+        tasks.add(new Tasks(3L, "Выполнить все домашние задания", "Покормить собаку, помыть посуду","28.10.2021", "Нет"));
+        tasks.add(new Tasks(4L, "Записаться на качку", "Качку нефти :)","12.12.2021", "Нет"));
+        tasks.add(new Tasks(5L, "Учить Итальянский", "Итальянский язык, чтобы заказать итальянскую пиццу","01.05.2021", "Нет"));
     }
 
-    public static ArrayList<News> getAllNews() {
-        return news;
+    public static ArrayList<Tasks> getAllTasks() {
+        return tasks;
+    }
+
+    public static void addTask(Tasks task) {
+        task.setId(id);
+        tasks.add(task);
+        id++;
+    }
+
+    public static Tasks getTask(Long id) {
+        for (Tasks task : tasks) {
+            if (task.getId() == id) {
+                return task;
+            }
+        }
+        return null;
     }
 }
