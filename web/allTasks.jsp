@@ -26,7 +26,7 @@
     </thead>
     <tbody>
     <%
-      ArrayList<Tasks> tasks = (ArrayList<Tasks>) request.getAttribute("tasks");
+      ArrayList<Tasks> tasks = DBManager.getAllTasks();
       for (Tasks el : tasks) {
     %>
     <tr>
