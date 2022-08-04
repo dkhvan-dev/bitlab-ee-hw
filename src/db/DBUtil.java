@@ -68,4 +68,14 @@ public class DBUtil {
         }
         return students;
     }
+
+    public static Students getStudent(Long id) {
+        ArrayList<Students> students = DBUtil.getStudents();
+        for (Students st : students) {
+            if (st.getId().equals(id)) {
+                return st;
+            }
+        }
+        return null;
+    }
 }

@@ -64,6 +64,9 @@
           <td><%=st.getSurname()%></td>
           <td><%=st.getBirthdate()%></td>
           <td><%=st.getCity()%></td>
+          <td>
+            <a href="/details?id=<%=st.getId()%>" class="btn btn-dark">DETAILS</a>
+          </td>
         </tr>
 
         <%
