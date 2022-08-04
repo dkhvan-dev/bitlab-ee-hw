@@ -33,4 +33,24 @@ public class DBManager {
         }
         return null;
     }
+
+    public static void updateTask(Long id, String name, String description, String date, String success) {
+        for (Tasks task : tasks) {
+            if (task.getId() == id) {
+                task.setName(name);
+                task.setDescription(description);
+                task.setDate(date);
+                task.setSuccess(success);
+            }
+        }
+    }
+
+    public static void deleteTask(Long id) {
+        for(int i = 0; i < tasks.size(); i++){
+            if(tasks.get(i).getId().equals(id)){
+                tasks.remove(i);
+                break;
+            }
+        }
+    }
 }

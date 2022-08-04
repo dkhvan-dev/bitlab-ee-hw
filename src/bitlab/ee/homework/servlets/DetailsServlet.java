@@ -20,7 +20,7 @@ public class DetailsServlet extends HttpServlet {
         Tasks task = DBManager.getTask(id);
         if (task != null) {
             req.setAttribute("task", task);
-            req.getRequestDispatcher("/home.jsp").forward(req, resp);
+            req.getRequestDispatcher("/details.jsp").forward(req, resp);
         } else {
             req.getRequestDispatcher("/404.jsp").forward(req, resp);
         }
@@ -28,6 +28,15 @@ public class DetailsServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF8");
+        Long id = Long.parseLong(req.getParameter("id"));
+        String name = req.getParameter("task_name");
+        String description = req.getParameter("task_description");
+        String date = req.getParameter("task_date");
+        String success = req.getParameter("task_success");
+
+        DBManager.updateTask(id, name, description, date, success);
+        resp.sendRedirect("/details?id=" + id);
 
     }
 }

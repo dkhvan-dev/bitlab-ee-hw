@@ -37,8 +37,7 @@
         <td><%=el.getDate()%></td>
         <td><%=el.getSuccess()%></td>
         <td>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo" style="color: #ffffff; background-color: #0916ff;">Детали</button>
-          <%@include file="details.jsp"%>
+          <a href="/details?id=<%=el.getId()%>" class="btn btn-primary" style="color: #ffffff; background-color: #0916ff;">Детали</a>
         </td>
       </tr>
 

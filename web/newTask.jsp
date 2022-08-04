@@ -27,7 +27,7 @@
                             <option>Нет</option>
                         </select>
                     </div>
-                    <button type="button" class="btn btn-primary">Добавить</button>
+                    <button type="submit" class="btn btn-primary">Добавить</button>
                 </form>
             </div>
         </div>

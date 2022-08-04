@@ -7,7 +7,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" style="color: #ffffff; font-weight: bold;" href="/allTasks.jsp">Все задания</a>
+        <a class="nav-link" style="color: #ffffff; font-weight: bold;" href="/">Все задания</a>
       </div>
     </div>
   </div>
