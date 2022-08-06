@@ -10,10 +10,14 @@
     <%
       Students student = (Students) request.getAttribute("student");
     %>
-    <h1>NAME: <%=student.getName()%></h1>
-    <h1>SURNAME: <%=student.getSurname()%></h1>
-    <h1>BIRTHDATE: <%=student.getBirthdate()%></h1>
-    <h1>CITY: <%=student.getCity()%></h1>
+
+    <ul class="list-group">
+      <li class="list-group-item mt-2"><%=student.getName()%></li>
+      <li class="list-group-item mt-2"><%=student.getSurname()%></li>
+      <li class="list-group-item mt-2"><%=student.getBirthdate()%></li>
+      <li class="list-group-item mt-2"><%=student.getCity()%></li>
+    </ul>
+    <a href="/edit?id=<%=student.getId()%>" class="btn btn-primary mt-3">EDIT STUDENT</a>
   </div>
 </body>
 </html>

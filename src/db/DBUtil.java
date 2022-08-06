@@ -78,4 +78,37 @@ public class DBUtil {
         }
         return null;
     }
+
+    public static void updateStudent(Students student) {
+        try {
+            PreparedStatement statement = connection.prepareStatement(
+                    "UPDATE students SET name = ?, surname = ?, birthdate = ?, city = ? " +
+                        "WHERE id = ?"
+            );
+
+            statement.setString(1, student.getName());
+            statement.setString(2, student.getSurname());
+            statement.setString(3, student.getBirthdate());
+            statement.setString(4, student.getCity());
+            statement.setLong(5, student.getId());
+
+            statement.executeUpdate();
+            statement.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void deleteStudent(Long id) {
+        try {
+            PreparedStatement statement = connection.prepareStatement(
+                    "DELETE FROM students WHERE id = ?"
+            );
+            statement.setLong(1, id);
+            statement.executeUpdate();
+            statement.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
